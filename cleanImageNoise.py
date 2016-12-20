@@ -1,6 +1,6 @@
 '''
 if a image (e.g., segmentation maps) is composed of several components, but there are some noise, which are in form of isolated components
-we can then remove the extra noise with following codes
+we can then remove the extra noise with following codes. 
 Dong Nie
 12/17/2016
 '''
@@ -16,11 +16,11 @@ from imgUtils import dice
 
 
 def filter_isolated_cells(array, struct):
-    """ Return array with completely isolated single cells removed
+    ''' Return array with completely isolated single cells removed
     :param array: Array with completely isolated single cells
     :param struct: Structure array for generating unique regions
     :return: Array with minimum region size > 1
-    """
+    '''
 
     filtered_array = np.copy(array)
     #id_regions, num_ids = ndimage.label(filtered_array, structure=struct)
@@ -61,8 +61,8 @@ def denoiseImg(array, struct):
 
 
 def main():
-    path='/home/dongnie/Desktop/Caffes/caffe/python/pelvicSeg/'
-    saveto='/home/dongnie/Desktop/Caffes/caffe/python/pelvicSeg/'
+    path='~/Desktop/Caffes/caffe/python/pelvicSeg/'
+    saveto='~/Desktop/Caffes/caffe/python/pelvicSeg/'
     caffeApp=0
     fileIDs=[1,2,3,4,6,7,8,10,11,12,13]
     #fileIDs=[1]
