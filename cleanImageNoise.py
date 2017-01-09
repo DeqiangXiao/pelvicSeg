@@ -1,7 +1,7 @@
 '''
 if a image (e.g., segmentation maps) is composed of several components, but there are some noise, which are in form of isolated components
 we can then remove the extra noise with following codes. 
-I stored it into my bitbucket.
+I stored it into my bitbucket. 1/8/2017
 Dong Nie
 12/17/2016
 '''
