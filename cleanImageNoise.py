@@ -26,9 +26,9 @@ def main():
         labelOrg=sitk.ReadImage(labelfn)
         labelimg=sitk.GetArrayFromImage(labelOrg) 
         # Run function on sample array
-        #filtered_array = filter_isolated_cells(mrimg, struct=np.ones((3,3,3)))        
+    
         filtered_array = denoiseImg(mrimg, struct=np.ones((3,3,3)))        
-        # Plot output, with all isolated single cells removed
+
         #plt.imshow(filtered_array, cmap=plt.cm.gray, interpolation='nearest')
         pr0=dice(labelimg,filtered_array,0)
         pr1=dice(labelimg,filtered_array,1)
