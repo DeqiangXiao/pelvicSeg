@@ -27,9 +27,12 @@ def main():
         gtOrg=sitk.ReadImage(gtfn)
         gtMat=sitk.GetArrayFromImage(gtOrg)
         #gtMat=np.transpose(gtMat,(2,1,0))
-        mat1=gtMat==1;
-        mat2=gtMat==2;
-        mat3=gtMat==3;
+        mat1=np.zeros((gtMat.shape[0],gtMat.shape[1],gtMat.shape[2]),dtype=np.int8)
+        mat2=np.zeros((gtMat.shape[0],gtMat.shape[1],gtMat.shape[2]),dtype=np.int8)
+        mat3=np.zeros((gtMat.shape[0],gtMat.shape[1],gtMat.shape[2]),dtype=np.int8)
+        mat1[gtMat==1]=1
+        mat2[gtMat==2]=1
+        mat3[gtMat==3]=1
         gtVol1=sitk.GetImageFromArray(mat1)
         sitk.WriteImage(gtVol1,outfn1)
         gtVol2=sitk.GetImageFromArray(mat2)
