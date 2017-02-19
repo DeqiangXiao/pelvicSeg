@@ -27,9 +27,9 @@ def main():
         gtOrg=sitk.ReadImage(gtfn)
         gtMat=sitk.GetArrayFromImage(gtOrg)
         #gtMat=np.transpose(gtMat,(2,1,0))
-        mat1=np.zeros((gtMat.shape[0],gtMat.shape[1],gtMat.shape[2]),dtype=np.int8)
-        mat2=np.zeros((gtMat.shape[0],gtMat.shape[1],gtMat.shape[2]),dtype=np.int8)
-        mat3=np.zeros((gtMat.shape[0],gtMat.shape[1],gtMat.shape[2]),dtype=np.int8)
+        mat1=np.zeros((gtMat.shape[0],gtMat.shape[1],gtMat.shape[2]),dtype=np.float32)
+        mat2=np.zeros((gtMat.shape[0],gtMat.shape[1],gtMat.shape[2]),dtype=np.float32)
+        mat3=np.zeros((gtMat.shape[0],gtMat.shape[1],gtMat.shape[2]),dtype=np.float32) #Note, MeshTools expect float data instead of int
         mat1[gtMat==1]=1
         mat2[gtMat==2]=1
         mat3[gtMat==3]=1
