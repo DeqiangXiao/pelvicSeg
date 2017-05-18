@@ -172,7 +172,7 @@ def main():
         mrimg=mrimg[startS:endS+1,:,:]
         print 'shape of mrimg, ',mrimg.shape
         originalMRI=mrimg
-        dim2_start=35
+        dim2_start=35 # this is detected attention region for the organs, actually, we can make it more precisely.
         dim2_end=235
         dim3_start=80
         dim3_end=192
