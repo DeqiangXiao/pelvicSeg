@@ -9,3 +9,5 @@ Used to store my projects
 3. extractPatch4SegMedImg.py: extract patches.
 
 4. extractMsPatch4SegMedImg.py: extract patches at multi-scale. Note, we didnot resize the 1st dimension, but the 2nd and 3rd dimension.
+
+5. dicom2Nii.py: convert dicom format data into nifti data.
