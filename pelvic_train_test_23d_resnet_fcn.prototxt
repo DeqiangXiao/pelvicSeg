@@ -1,4 +1,5 @@
 # concat and skip connection to adujst # of channels, i aslo use bn 10/21/2016
+#if you platform support CUDNN, you can all replace CAFFE->CUDNN
 layer {
   name: "data"
   type: "HDF5Data"
