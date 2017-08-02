@@ -13,3 +13,5 @@ Used to store my projects
 5. dicom2Nii.py: convert dicom format data into nifti data.
 
 6. pelvic_train_test_23d_resnet_fcn.prototxt: a basic FCN+residual unit prototxt.
+
+7. genLossSeries.m and drawDiagram.m are the codes I wrote to generate loss from the caffe output logs, and then draw the loss curves.
