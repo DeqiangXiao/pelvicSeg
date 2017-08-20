@@ -8,7 +8,7 @@ Used to store my projects
 
 3. extractPatch4SegMedImg.py: extract patches.
 
-4. extractMsPatch4SegMedImg.py: extract patches at multi-scale. Note, we didnot resize the 1st dimension, but the 2nd and 3rd dimension.
+4. extractMsPatch4SegMedImg.py: extract patches at multi-scale. Note, we didnot resize the 1st dimension, but the 2nd and 3rd dimension. We try to implement multi-resolution supervsion in the segmenter.
 
 5. dicom2Nii.py: convert dicom format data into nifti data.
 
@@ -16,6 +16,6 @@ Used to store my projects
 
 7. genLossSeries.m and drawDiagram.m are the codes I wrote to generate loss from the caffe output logs, and then draw the loss curves.
 
-8. extractSsPatch4SegMedImg.py: extract single scale patches, same as extractPatch4SegMedImg.py
+8. extractSsPatch4SegMedImg.py: extract single scale patches, same as extractPatch4SegMedImg.py.
 
-9. extractPatch4SegRegMedImg.py: based on 8, we also extract regression patches for organs
+9. extractPatch4SegRegMedImg.py: based on 8, we also extract regression patches for organs.
