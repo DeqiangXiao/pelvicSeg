@@ -15,3 +15,7 @@ Used to store my projects
 6. pelvic_train_test_23d_resnet_fcn.prototxt: a basic FCN+residual unit prototxt.
 
 7. genLossSeries.m and drawDiagram.m are the codes I wrote to generate loss from the caffe output logs, and then draw the loss curves.
+
+8. extractSsPatch4SegMedImg.py: extract single scale patches, same as extractPatch4SegMedImg.py
+
+9. extractPatch4SegRegMedImg.py: based on 8, we also extract regression patches for organs
