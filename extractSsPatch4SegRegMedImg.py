@@ -41,9 +41,9 @@ def cropCubic(matFA,matSeg,fileID,d,step,rate):
     trainFA=np.zeros([estNum,1, dFA[0],dFA[1],dFA[2]],np.float16)
     trainSeg=np.zeros([estNum,1,dSeg[0],dSeg[1],dSeg[2]],dtype=np.int8)
     trainFA2D=np.zeros([estNum, dFA[0],dFA[1],dFA[2]],np.float16)
-    trainBladder2D=np.zeros([estNum, dFA[0],dFA[1],dSeg[2]],np.float16)
-    trainProstate2D=np.zeros([estNum, dFA[0],dFA[1],dSeg[2]],np.float16)
-    trainRectum2D=np.zeros([estNum, dFA[0],dFA[1],dSeg[2]],np.float16)
+    trainBladder2D=np.zeros([estNum, dSeg[0],dSeg[1],dSeg[2]],np.float16)
+    trainProstate2D=np.zeros([estNum, dSeg[0],dSeg[1],dSeg[2]],np.float16)
+    trainRectum2D=np.zeros([estNum, dSeg[0],dSeg[1],dSeg[2]],np.float16)
     trainSeg2D=np.zeros([estNum,dSeg[0],dSeg[1],dSeg[2]],dtype=np.int8)
     print 'trainFA shape, ',trainFA.shape
     #to padding for input
